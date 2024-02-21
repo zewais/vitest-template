@@ -21,6 +21,8 @@ await user.keyboard("[ShiftLeft>]"); // Press Shift (without releasing it)
 await user.click(element); // Perform a click with `shiftKey: true`
 ```
 
+[userEvent refernece](https://testing-library.com/docs/user-event/intro)
+
 We will also use react-bootstrap library in this example
 
 ## react-bootstrap install
@@ -37,3 +39,5 @@ npm install react-bootstrap bootstrap
 }
 import "bootstrap/dist/css/bootstrap.min.css";
 ```
+
+[react-bootstrap reference](https://react-bootstrap.netlify.app/docs/getting-started/introduction)
