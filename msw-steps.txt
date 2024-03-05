@@ -6,4 +6,6 @@
 6. reset handlers after each test
 
 Handlers Example: https://mswjs.io/docs/basics/mocking-responses -> json responses
+- Make a mocks folder that has 2 files in them.
+- one file for handlers and the other for a mock server
 Intergration(node.js): https://mswjs.io/docs/integrations/node

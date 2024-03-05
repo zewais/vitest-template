@@ -6,7 +6,9 @@ const app = express();
 const { pizzaOptions, extraToppings } = require("../data/pizzasOptions.js");
 
 app.use(cors());
-
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
 //routes
 app.get("/pizzas", (request, response) => {
   response.send(pizzaOptions);

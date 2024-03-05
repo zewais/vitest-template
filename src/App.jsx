@@ -1,7 +1,12 @@
 import "./App.css";
+import Options from "./components/Options";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Options optionType="pizzas" />
+    </>
+  );
 }
 
 export default App;
