@@ -1,0 +1,9 @@
+1. install mock service worker (npm install msw --save-dev)
+2. Create handlers
+3. Create test server
+4. Make sure test server listens to all tests
+5. reset server after each test
+6. reset handlers after each test
+
+Handlers Example: https://mswjs.io/docs/basics/mocking-responses -> json responses
+Intergration(node.js): https://mswjs.io/docs/integrations/node
