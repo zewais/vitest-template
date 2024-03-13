@@ -3,7 +3,7 @@ import { response } from "express";
 import { useEffect, useState } from "react";
 import PizzaOption from "./PizzaOption";
 import { Row } from "react-bootstrap";
-import { useOrderDetails } from "../src/contexts/OrderDetails";
+import { useOrderDetails } from "../contexts/OrderDetails";
 import { formatCurrency } from "../utilities/utilities";
 
 export default function Options({ optionType }) {

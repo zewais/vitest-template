@@ -18,7 +18,7 @@ test("update subtotal for pizza choices", async () => {
     name: /cheese/i,
   });
   await user.clear(cheeseInput);
-  await user.type(cheeseInput, "s");
+  await user.type(cheeseInput, "small");
   expect(pizzaSubtotal).toHaveTextContent("10.95");
 
   //update pepperoni pizza to a small pizza, and check the subtotal
@@ -26,6 +26,6 @@ test("update subtotal for pizza choices", async () => {
     name: /pepperoni/i,
   });
   await user.clear(pepperoniInput);
-  await user.type(pepperoniInput, "s");
+  await user.type(pepperoniInput, "small");
   expect(pizzaSubtotal).toHaveTextContent("24.90");
 });

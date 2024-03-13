@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { pizzaOptions } from "../../data/pizzasOptions";
 
-const orderDetails = createContext();
+const OrderDetails = createContext();
 
 //create a custon hook to check whether we're in a provider
 
@@ -50,12 +50,12 @@ export function OrdersDetailsProvider(props) {
     );
     return totalReducer;
   }
-
+  //calculate the total of pizza orders by using reduce method
   const totals = {
     pizzas: calculateTotal("pizzas"),
     extraToppings: calculateTotal("extraToppings"),
   };
-
+  //bundle the avaiable getters and setters for the provider in on object
   const value = { optionCounts, totals, updateItemCount, resetOrder };
   return <OrderDetails.Provider value={value} {...props} />;
 }
