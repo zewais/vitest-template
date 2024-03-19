@@ -24,7 +24,9 @@ export default function Options({ optionType }) {
   return (
     <>
       <h2>{title}</h2>
-      <p>total: {formatCurrency(totals[optionType])}</p>
+      <p>
+        {title} total: {formatCurrency(totals[optionType])}
+      </p>
       <Row>{optionItems}</Row>
     </>
   );

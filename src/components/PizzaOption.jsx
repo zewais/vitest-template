@@ -23,7 +23,19 @@ export default function PizzaOption({ id, type, image }) {
         {type}
       </Form.Label>
       <Col xs="5" style={{ textAlign: "left" }}>
-        <Form.Control type="text" defaultValue={0} onChange={handleChange} />
+        {/* <input
+          type="text"
+          name="pizzaSize"
+          id="pizzaSize"
+          placeholder={type}
+          onChange={handleChange}
+        /> */}
+        <Form.Control
+          type="text"
+          defaultValue={"choose size"}
+          onChange={handleChange}
+          placeholder={type}
+        />
       </Col>
     </Col>
   );
